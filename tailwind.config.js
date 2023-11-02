@@ -5,7 +5,15 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        barlow: ['Barlow', 'sans-serif'],
+      },
+      fontWeight: {
+        bold: 600,
+        extraBold: 800,
+      }
+    },
   },
   plugins: [],
 }
