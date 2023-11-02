@@ -1,13 +1,15 @@
 import React from 'react';
-import Article from './Article';
+import Article from './Articles';
 
 const Category = ({ category, articles }) => {
   return (
-    <div className="mb-8">
+    <div className="mb-8 border-card">
       <h1 className="text-2xl font-bold mb-4">{category}</h1>
-      {articles.map((article, index) => (
-        <Article key={index} title={article.title} content={article.content} />
-      ))}
+      <div className="flex flex-wrap">
+        {articles.map((article, index) => (
+          <Article key={index} title={article.title} content={article.content} />
+        ))}
+      </div>
     </div>
   );
 }
