@@ -60,7 +60,7 @@ function App() {
       </svg>
 
       <svg
-        className="fade-in"
+        className="scale-animation"
         fill="#8C30F5"
         width="250"
         height="250"
